@@ -1,0 +1,19 @@
+{
+  "name": "learnings-javascript-platzi-workshop-consuming-api-rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anibal-corral/learnings-javascript-platzi-workshop-consuming-api-rest.git"
+  },
+  "author": "Anibal Corral",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anibal-corral/learnings-javascript-platzi-workshop-consuming-api-rest/issues"
+  },
+  "homepage": "https://github.com/anibal-corral/learnings-javascript-platzi-workshop-consuming-api-rest#readme"
+}
