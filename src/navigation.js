@@ -6,7 +6,8 @@ trendingBtn.addEventListener('click', ()=>{
     location.hash='#trends';
 });
 arrowBtn.addEventListener('click', ()=>{
-    location.hash='#home';
+    // location.hash='#home';
+    window.history.back();
 });
 window.addEventListener('DOMContentLoaded',navigator, false);
 window.addEventListener('hashchange',navigator, false);
@@ -30,19 +31,19 @@ function navigator(){
 
 function trendPage(){
     console.log('TRENS'.padEnd(100,'*'));
-    getTrendingMoviesPreview();
     headerSection.classList.remove('header-container--long');
     headerSection.style.background='';
     arrowBtn.classList.remove('inactive');
     arrowBtn.classList.remove('header-arrow--white');
     headerTitle.classList.add('inactive');
     headerCategoryTitle.classList.remove('inactive');
+    headerCategoryTitle.innerHTML="Trends"
     searchForm.classList.add('inactive');
     trendingPreviewSection.classList.add('inactive');
     categoriesPreviewSection.classList.add('inactive')
     genericSection.classList.remove('inactive');
     movieDetailSection.classList.add('inactive');
-
+    getTrendingMovies();
 }
 function searchPage(){
     console.log('SEARCH'.padEnd(100,'*'));
